@@ -1,0 +1,45 @@
+.public-inbox-dialog {
+  max-width: calc(100vw - 24px) !important;
+  height: calc(100vh - 48px) !important;
+  max-height: calc(100vh - 48px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.public-inbox-dialog .el-dialog__header {
+  flex: 0 0 auto !important;
+  padding-right: 44px !important;
+}
+
+.public-inbox-dialog .el-dialog__body {
+  padding-top: 8px !important;
+  overflow: hidden !important;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 0 !important;
+}
+
+.public-inbox-dialog .detail-container {
+  height: 100% !important;
+  max-height: 100% !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.public-inbox-dialog .detail-scroll {
+  height: 100% !important;
+  min-height: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+.public-inbox-dialog .detail-scroll .el-scrollbar__wrap {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.public-inbox-dialog .detail-scroll .el-scrollbar__view {
+  min-height: 100% !important;
+}

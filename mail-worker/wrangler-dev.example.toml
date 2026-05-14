@@ -1,0 +1,46 @@
+name = "cloud-mail-dev"
+main = "src/index.js"
+compatibility_date = "2025-06-04"
+keep_vars = true
+
+[observability]
+enabled = true
+
+[dev]
+ip = "0.0.0.0"
+
+[[d1_databases]]
+binding = "db"
+database_name = "mail-d1"
+database_id = "<D1_DATABASE_ID>"
+remote = true
+
+[[kv_namespaces]]
+binding = "kv"
+id = "<KV_NAMESPACE_ID>"
+remote = true
+
+[[r2_buckets]]
+binding = "r2"
+bucket_name = "mail-r2"
+remote = true
+
+#[ai]
+#binding = "ai"
+
+[assets]
+binding = "assets"
+directory = "./dist"
+not_found_handling = "single-page-application"
+run_worker_first = true
+
+#[[send_email]]
+#name = "email"
+
+[vars]
+ai_model = ""
+analysis_cache = false
+orm_log = false
+domain = ["example.com"]
+admin = "admin@example.com"
+jwt_secret = "<JWT_SECRET>"
